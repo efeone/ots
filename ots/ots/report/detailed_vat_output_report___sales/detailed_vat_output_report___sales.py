@@ -49,7 +49,7 @@ def execute(filters=None):
 
         for tax in taxes:
             vat_amount += tax.tax_amount
-            tax_percent = tax.rate
+            tax_percent += tax.rate
 
         data.append({
             "invoice_no": inv.name,
